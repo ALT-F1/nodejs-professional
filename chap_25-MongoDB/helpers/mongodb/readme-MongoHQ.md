@@ -1,3 +1,4 @@
+//if you use http://www.mongoqh.com db services 
 //list all databases
 
 curl -X GET https://api.mongohq.com/databases?_apikey=<api key>
