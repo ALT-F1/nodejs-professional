@@ -205,4 +205,6 @@ v2013-08-04
 [Request]: https://npmjs.org/package/request
 [Secrets of the JavaScript Ninja book]: http://astore.amazon.fr/i14ynet-21/detail/193398869X
 [Should]: https://github.com/visionmedia/should.js
+[Sublime Text 2]: http://www.sublimetext.com/2
+[WebStorm IDE]: http://www.jetbrains.com/webstorm/
 [Ubuntu]: http://www.ubuntu.com/
