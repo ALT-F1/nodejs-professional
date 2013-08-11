@@ -10,7 +10,8 @@ var app = express();
 
 //db stuffs
 console.log("Don't forget to update the file app.js with your URL to access the mongodb !!!");
-var dbURL = 'mongodb://<login>:<password>@mongohq.com:<port>/<database name>';
+//var dbURL = 'mongodb://<login>:<password>@mongohq.com:<port>/<database name>';
+var dbURL = 'mongodb://ab:1234567890POIUYTREZA@dharma.mongohq.com:10016/amia-systems';
 
 require('mongoose').connect(dbURL);
 

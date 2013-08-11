@@ -12,7 +12,12 @@ curl -d '{"a":"b","c":"d"}' -H 'Content-Type: application/json' http://localhost
 
 var PORT_LISTENER = 8086;
 
-console.log("I am listening to this port: http://localhost:%s", PORT_LISTENER);
+console.log('I am listening to this port: http://localhost:%s', PORT_LISTENER);
+console.log('Try this on the command line:');
+console.log('curl -X POST -F a=b -F c=d http://localhost:%s', PORT_LISTENER);
+console.log('curl -d \'{"a":"b","c":"d"}\' http://localhost:%s', PORT_LISTENER);
+console.log('curl -d \'{"a":"b","c":"d"}\' -H \'Content-Type: application/json\' http://localhost:%s', PORT_LISTENER);
+
 
 var connect = require('connect');
 var app = connect();

@@ -7,7 +7,7 @@ not supported by the client, the error handler outputs the error as plaintext.
 */
 var PORT_LISTENER = 8083;
 
-console.log("I am listening to this port: http://localhost:", PORT_LISTENER);
+console.log("I am listening to this port: http://localhost:%s", PORT_LISTENER);
 
 var connect = require('connect');
 var app = connect();

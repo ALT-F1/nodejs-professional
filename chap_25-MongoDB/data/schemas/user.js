@@ -58,6 +58,7 @@ var UserSchema = new mongoose.Schema({
 	},
 	*/
 	password: String,
+	bio: String,
 	email: {
 		type: String,
 		required: true,

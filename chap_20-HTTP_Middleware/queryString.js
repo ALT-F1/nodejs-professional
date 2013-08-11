@@ -5,6 +5,7 @@ req.query.
 var PORT_LISTENER = 8085;
 
 console.log("I am listening to this port: http://localhost:%s", PORT_LISTENER);
+console.log("Try http://localhost:%s?q=5&p=12&authoris=Me", PORT_LISTENER);
 
 var connect = require('connect');
 var app = connect();
