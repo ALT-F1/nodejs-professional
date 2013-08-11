@@ -24,7 +24,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get('/users/:name', loadUser, function(req, res, next) {
+  app.get('/users/:name', loadUser, function(req, res) {
     console.log('pass through app.get("/users/:name")');
     res.render('users/profile', {
       title: 'User profile',
@@ -43,7 +43,7 @@ module.exports = function(app) {
     }
   });
 
-  app.del('/users/:name', loadUser, restrictUserToSelf, function(req, res, next) {
+  app.del('/users/:name', loadUser, restrictUserToSelf, function(req, res) {
     console.log('pass through app.del("/users/:name")');
 
     delete users[req.params.name];

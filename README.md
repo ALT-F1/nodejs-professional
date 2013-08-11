@@ -1,11 +1,12 @@
-Sample code heavily based on the Professional Node JS book and the Secrets of the JavaScript Ninja book
-=======================================================================================================
+Sample code heavily based on the 'Professional Node JS' and the 'Secrets of the JavaScript Ninja' book
+======================================================================================================
 
 What is this?
 =============
 
 + useful to learn [NodeJS] and how to write simple Create/Retrieve/Update/Delete applications
 + web apps using [NodeJS], [Jade], [Express], [Async] and [MongoDB]
++ tooling uses [Grunt], [Grunt-cli] and [Grunt-init]
 + heavily based on the [Professional Node JS book] and a bit of help from the [Secrets of the JavaScript Ninja book]
 
 Who are we?
@@ -56,6 +57,8 @@ chap_21-Express
 ---------------
 
 + ```npm install```
++ ```grunt```
+    + see the Gruntfile.js for further documentation
 + ```node app```
 + open the web browser on the right port, read the command line. e.g. ```http://localhost:<port>```
 
@@ -110,6 +113,8 @@ Technical requirements
 
 CHANGELOG
 =========
+v2013-08-11
++ add grunt to chap_21-Express
 
 v2013-08-11
 
@@ -174,7 +179,6 @@ v2013-08-04
 + create a middleware component that introduces a header into the response header section
 
 
----------------------------------------
 [ALT-F1]: http://www.alt-f1.be
 [AngularJS]: http://angularjs.org/
 [Async]: https://npmjs.org/package/async
