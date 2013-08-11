@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1 Articles
+
+    include list
+    +article-list(articles)
+    br
+    - if (page > 0) {
+        a(href="?page=" + (page - 1)) Previous
+        &nbsp;
+    - }
+
+    - if (! lastPage) {
+        a(href="?page=" + (page + 1)) Next
+    - }
+    hr
+    p
+        a(href="/articles/new") Create new article

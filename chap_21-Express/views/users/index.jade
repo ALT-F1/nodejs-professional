@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+	h1 Users
+
+	p 
+		a(href="/users/new") Create new profile
+		&nbsp;|&nbsp;
+		a(href="/") Home page
+
+	ul
+		- for(var username in users) {
+			li
+				a(href="/users/" + encodeURIComponent(username))= users[username].name
+		- };
+		

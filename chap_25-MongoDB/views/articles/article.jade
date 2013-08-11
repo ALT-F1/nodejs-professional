@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	h1 Article details
+
+	h2= article.title
+
+	div!= article.body
+	hr
+	p
+		span Author:
+		&nbsp;
+		a(href="/users/" + encodeURIComponent(article.author.username))= article.author.full_name
+	p
+		a(href="/articles") Back to all articles

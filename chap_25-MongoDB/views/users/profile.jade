@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+    form(action="/users/" + encodeURIComponent(user.username), method="POST")
+        input(name="_method", type="hidden", value="DELETE")
+        input(type="submit", value="Delete this user")
+
+    h1= user.full_name
+
+    h2 Bio
+    p= user.bio
+
+    h2 Email
+    p= user.email
+
+    h2 Gender
+    p= user.gender
+
+    h2 Birthday
+    p= user.birthday
+
+    - if (user.twitter) {
+        h2 Twitter
+        p
+            a(href= user.twitter_url)="@" + user.twitter
+    - }
+    hr
+    h2 Recent Articles
+    
+    include ../articles/list
+    +article-list(recentArticles)
+    hr
+    a(href='/articles/new') Create an article

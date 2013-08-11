@@ -1,0 +1,30 @@
+doctype 5
+html
+    head
+        title #{title} - My Site
+        link(rel='stylesheet', href='/stylesheets/style.css')
+            meta(key='description', value='Create and delete users and Create articles written by those users from a MongoDB database using Node, Express and Jade')
+    body
+        header
+            h1 My Site
+            include session/user
+        .container
+            .main-content
+                block content
+        footer
+            br
+            hr
+            div
+                &copy; 2013, 
+                a(href="http://www.alt-f1.be") ALT-F1 
+                span - heavily based on&nbsp;
+                a(href='http://astore.amazon.fr/i14ynet-21/detail/1118185463') Professional Node.js
+                span &nbsp;by Pedro Teixeira
+                span &nbsp; - Running on&nbsp;
+                a(href="http://nodejs.org") Node
+                span &nbsp;with&nbsp;
+                a(href="http://expressjs.com") Express
+                span &nbsp;and&nbsp;
+                a(href="http://jade-lang.com") Jade
+                span &nbsp;and&nbsp;
+                a(href="http://mongodb.org") MongoDB
