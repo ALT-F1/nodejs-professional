@@ -1,0 +1,6 @@
+mixin article-list(articles)
+    ul
+    - articles.forEach(function(article){
+        li
+            a(href="/articles/" + encodeURIComponent(article.title))= article.title
+    - 	})

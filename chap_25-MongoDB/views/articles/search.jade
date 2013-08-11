@@ -1,0 +1,5 @@
+mixin search-articles
+	form(method="GET", action="/articles/search")
+		p
+			input#title(name="q")
+			input(type="submit", value="Search article")

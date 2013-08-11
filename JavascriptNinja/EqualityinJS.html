@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title></title>
+		 <script type="text/javascript" src="scripts/assert.js"></script>
+		 <link href="styles/assert.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<script type="text/javascript">
+		var a = new String('foo');
+		var b = new String('foo');
+		a = 'foo';
+		console.log("log: typeof a is %s - Content of a is %s", typeof a, a.va);
+		console.log("log: typeof b is %s - Content of b is %s", typeof b, b);
+		console.log("log: typeof 'foo' is %s", typeof 'foo');
+		
+		assert(a == b, "false as a and b are Type Object and reference different object");
+		assert(a === b, "false as a and b are Type Object and reference different objects");
+		assert(typeof a === "object", "a type is object");
+		assert(a == 'foo', "true as a and 'foo' are of a different type and, the Object (a) is converted to String 'foo'");
+		
+		</script>
+	</body>
+</html>
