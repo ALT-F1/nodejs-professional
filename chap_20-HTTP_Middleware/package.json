@@ -1,16 +1,14 @@
 {
-  "name": "Node-Express-Jade-Mongoose-app",
+  "name": "chap_20-HTTP_Middleware",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
+  "description": "Understanding how Connect works",
+  "main": "echo \"Run 'node <filename>.js files\" && exit 1",
   "dependencies": {
-    "express": "~3.2.1",
-    "jade": "~0.34.1",
-    "mongoose": "~3.6.16",
-    "request": "~2.26.0",
-    "async": "~0.2.9"
+    "connect": "~2.8.5",
+    "mkdirp": "~0.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,10 +16,7 @@
   },
   "keywords": [
     "nodejs",
-    "connect",
-    "Express",
-    "Jade",
-    "MongoDB"
+    "connect"
   ],
   "author": "Abdelkrim BOUJRAF",
   "license": "MIT",

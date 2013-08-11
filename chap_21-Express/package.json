@@ -6,7 +6,24 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.2.1",
-    "jade": "*"
-  }
+    "express": "~3.2.1",
+    "jade": "~0.34.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ALT-F1/nodejs-profressional.git"
+  },
+  "keywords": [
+    "nodejs",
+    "connect",
+    "Express",
+    "Jade"
+  ],
+  "author": "Abdelkrim BOUJRAF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALT-F1/nodejs-profressional/issues"
+  },
+  "description": "learn NodeJS and how to write simple Create/Retrieve/Update/Delete (CRUD) applications using fat file",
+  "main": "app.js"
 }

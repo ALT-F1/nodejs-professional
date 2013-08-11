@@ -4,9 +4,9 @@ component
 */ 
 
 var connect = require('connect');
-var PORT_LISTENER = 8081;
 
-console.log("I am listening to this port: http://localhost:", PORT_LISTENER);
+var PORT_LISTENER = 8081;
+console.log("I am listening to this port: http://localhost:%s", PORT_LISTENER);
 
 // import middlewares
 var errorCreator = require('./error_creator');
@@ -18,9 +18,9 @@ var replyText = require('./reply_text');
 
 var app = connect.createServer(
 	//errorCreator(),
-	saveRequest('_generated/' + '/requests'),
+	saveRequest('./_generated/requests'),
 	writeHeader('X-Powered-By', 'Node'),
-	replyText('Hello World!'),
+	replyText('Hello World! Look into the "_generated/requests" directory, a file has been created!'),
 	errorHandler());
 
 app.listen(PORT_LISTENER);
