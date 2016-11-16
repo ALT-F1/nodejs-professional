@@ -192,7 +192,7 @@ v2013-08-04
 [Grunt]: http://gruntjs.com/
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [Jade]: http://jade-lang.com/
-[Jasmine]: http://pivotal.github.io/jasmine/
+[Jasmine]: https://jasmine.github.io/
 [Javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [Karma]: http://karma-runner.github.io/
 [log4js]: https://github.com/nomiddlename/log4js-node
