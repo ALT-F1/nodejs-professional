@@ -196,7 +196,7 @@ v2013-08-04
 [Javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [Karma]: http://karma-runner.github.io/
 [log4js]: https://github.com/nomiddlename/log4js-node
-[Mocha]: http://visionmedia.github.io/mocha/
+[Mocha]: http://mochajs.org/
 [MongoDB]: http://www.mongodb.org/
 [MongoHQ]: https://www.mongohq.com
 [MongoLab]: https://mongolab.com
