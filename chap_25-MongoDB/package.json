@@ -9,7 +9,7 @@
     "express": "~3.2.1",
     "jade": "~0.34.1",
     "mongoose": ">=5.7.5",
-    "request": "~2.26.0",
+    "request": "~2.88.0",
     "async": "~0.2.9"
   },
   "repository": {
